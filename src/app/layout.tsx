@@ -14,6 +14,9 @@ const inter = Inter({
   display: "swap",
 });
 
+// GitHub Pages serves under /waltoa in production; prefix asset URLs to match.
+const basePath = process.env.NODE_ENV === "production" ? "/waltoa" : "";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://justusmutscheller.github.io"),
   title: "WALTOA · Science. Sound. Strategy.",
@@ -35,6 +38,14 @@ export const metadata: Metadata = {
       "Acoustics, research, technology and communication. Solutions people hear, understand and trust.",
     type: "website",
     locale: "en_US",
+    images: [{ url: `${basePath}/og.png`, width: 1200, height: 630, alt: "WALTOA · Science. Sound. Strategy." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WALTOA · Science. Sound. Strategy.",
+    description:
+      "Acoustics, research, technology and communication. Solutions people hear, understand and trust.",
+    images: [`${basePath}/og.png`],
   },
 };
 
