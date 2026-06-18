@@ -33,7 +33,7 @@ export function Hero() {
 
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone">
           We connect research, technology and communication into solutions that
-          people hear, understand and trust — from acoustic consulting and
+          people hear, understand and trust, from acoustic consulting and
           technical innovation concepts to the strategic marketing of complex
           technologies.
         </p>

@@ -10,7 +10,7 @@ export const ETHICS_PRINCIPLES = [
   {
     no: "02",
     title: "Transparent communication",
-    body: "We never market a claim beyond its evidence. What the research does not support, we do not say — for any fee.",
+    body: "We never market a claim beyond its evidence. What the research does not support, we do not say, for any fee.",
   },
   {
     no: "03",
@@ -25,6 +25,6 @@ export const ETHICS_PRINCIPLES = [
   {
     no: "05",
     title: "Long-term value creation",
-    body: "We design for impact over time — solutions that still make sense and hold up tomorrow.",
+    body: "We design for impact over time, solutions that still make sense and hold up tomorrow.",
   },
 ];

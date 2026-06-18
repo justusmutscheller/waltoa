@@ -15,7 +15,7 @@ export type Img = { src: string; alt: string; credit: string };
 
 export const HERO_IMAGE: Img = {
   src: unsplash("photo-1535868118629-f37bcd69ff59", 1800),
-  alt: "A water drop meeting a still surface — the moment a signal is born.",
+  alt: "A water drop meeting a still surface, the moment a signal is born.",
   credit: "Unsplash",
 };
 
@@ -23,17 +23,17 @@ export const HERO_IMAGE: Img = {
 export const SOURCES: Img[] = [
   {
     src: unsplash("photo-1535868118629-f37bcd69ff59", 900, 1125),
-    alt: "A water drop with concentric rings — a signal spreading out.",
+    alt: "A water drop with concentric rings, a signal spreading out.",
     credit: "Unsplash",
   },
   {
     src: unsplash("photo-1520523839897-bd0b52f945a0", 900, 1125),
-    alt: "Piano keys in warm light — sound as information.",
+    alt: "Piano keys in warm light, sound as information.",
     credit: "Unsplash",
   },
   {
     src: unsplash("photo-1591089570621-ea86c99a09a6", 900, 1125),
-    alt: "A songbird on a branch — natural acoustics and perception.",
+    alt: "A songbird on a branch, natural acoustics and perception.",
     credit: "Unsplash",
   },
 ];

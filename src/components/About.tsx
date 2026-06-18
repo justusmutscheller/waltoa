@@ -26,7 +26,7 @@ export function About() {
           </p>
           <p className="mt-6 text-lg leading-relaxed text-stone">
             We help companies, research institutions and technology-driven
-            projects make complex ideas audible, understandable and effective —
+            projects make complex ideas audible, understandable and effective,
             from the first measurement to the finished message.
           </p>
 
@@ -60,9 +60,8 @@ export function About() {
         ))}
       </div>
       <p className="mt-6 max-w-2xl text-sm leading-relaxed text-stone">
-        Our imagery doesn&rsquo;t show the microphone, but the source: the origin
-        of sound, atmosphere and perception — from the water drop and the
-        instrument to the voice of nature.
+        Capturing sound and speech, from the water drop and the instrument to the
+        voice of nature.
       </p>
     </Section>
   );

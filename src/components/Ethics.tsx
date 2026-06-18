@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Section, Eyebrow } from "@/components/Section";
 import { ETHICS_PRINCIPLES, ETHICS_INTRO } from "@/lib/ethics";
 
@@ -12,12 +11,6 @@ export function Ethics() {
             Principles we will not trade.
           </h2>
           <p className="mt-5 leading-relaxed text-stone">{ETHICS_INTRO}</p>
-          <Link
-            href="/ethics"
-            className="font-display mt-7 inline-block text-sm tracking-wide text-ink underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-stone"
-          >
-            Read the full guideline
-          </Link>
         </div>
 
         <div className="md:col-span-7 md:col-start-6">

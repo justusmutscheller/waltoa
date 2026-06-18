@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WALTOA — Science. Sound. Strategy.",
+  title: "WALTOA · Science. Sound. Strategy.",
   description:
     "WALTOA connects acoustics, research, technology and communication into solutions people hear, understand and trust. Acoustic consulting, audio design, research & innovation strategy.",
   keywords: [
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     "innovation strategy",
   ],
   openGraph: {
-    title: "WALTOA — Science. Sound. Strategy.",
+    title: "WALTOA · Science. Sound. Strategy.",
     description:
-      "Acoustics, research, technology and communication — solutions people hear, understand and trust.",
+      "Acoustics, research, technology and communication. Solutions people hear, understand and trust.",
     type: "website",
     locale: "en_US",
   },

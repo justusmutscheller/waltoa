@@ -14,7 +14,7 @@ export function Contact() {
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-stone">
           Whether it&rsquo;s a research project, a technical innovation or a
-          strategic initiative — we look forward to the conversation.
+          strategic initiative, we look forward to the conversation.
         </p>
         <p className="font-display mt-8 text-sm uppercase tracking-[0.28em] text-clay">
           Science · Sound · Strategy

@@ -4,7 +4,7 @@ const SERVICES = [
   {
     no: "01",
     title: "Acoustic consulting",
-    body: "Analysis, development and optimisation of acoustic environments, audio technologies and signal processes — from the first measurement to practical application.",
+    body: "Analysis, development and optimisation of acoustic environments, audio technologies and signal processes, from the first measurement to practical application.",
   },
   {
     no: "02",
@@ -29,7 +29,7 @@ const SERVICES = [
   {
     no: "06",
     title: "Audio-technical product development",
-    body: "We develop audio-technical products from the ground up — capturing sound and engineering the technology around it, turning acoustic ideas into working devices.",
+    body: "We develop audio-technical products from the ground up, from microphones and sensors to the systems around them, capturing sound and speech and advancing the technology that turns acoustic ideas into working devices.",
   },
 ];
 
@@ -42,7 +42,7 @@ export function Services() {
           From measurement to message.
         </h2>
         <p className="mt-5 text-lg leading-relaxed text-stone">
-          Six disciplines that work together — connected by a shared
+          Six disciplines that work together, connected by a shared
           understanding of sound, signal and effect.
         </p>
       </div>

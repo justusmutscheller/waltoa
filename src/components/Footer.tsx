@@ -3,10 +3,9 @@ import { Container } from "@/components/ui/container";
 import { IMPRINT } from "@/lib/imprint";
 
 const NAV = [
+  { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
-  { label: "Research", href: "/#topics" },
-  { label: "Audio design", href: "/#services" },
-  { label: "Technology", href: "/#topics" },
+  { label: "Philosophy", href: "/#philosophy" },
   { label: "Ethics", href: "/#ethics" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -27,7 +26,7 @@ export function Footer() {
               Science · Sound · Strategy
             </p>
             <p className="mt-4 max-w-xs leading-relaxed text-stone">
-              Acoustics, research, technology and communication — solutions
+              Acoustics, research, technology and communication. Solutions
               people hear, understand and trust.
             </p>
           </div>
@@ -87,9 +86,6 @@ export function Footer() {
             </Link>
             <Link href="/privacy" className="transition-colors hover:text-ink">
               Privacy
-            </Link>
-            <Link href="/ethics" className="transition-colors hover:text-ink">
-              Ethics
             </Link>
           </div>
         </div>

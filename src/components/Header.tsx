@@ -8,7 +8,6 @@ import { Container } from "@/components/ui/container";
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Topics", href: "#topics" },
   { label: "Philosophy", href: "#philosophy" },
   { label: "Ethics", href: "#ethics" },
   { label: "Contact", href: "#contact" },

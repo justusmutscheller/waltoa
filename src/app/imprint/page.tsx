@@ -3,7 +3,7 @@ import { LegalShell } from "@/components/LegalShell";
 import { IMPRINT } from "@/lib/imprint";
 
 export const metadata: Metadata = {
-  title: "Imprint — WALTOA",
+  title: "Imprint · WALTOA",
   description: "Legal notice and provider identification for WALTOA.",
 };
 
