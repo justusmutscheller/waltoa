@@ -10,6 +10,6 @@ export const IMPRINT = {
     "San Francisco, CA 94114",
     "United States",
   ],
-  // Contact email used by the "Get in touch" CTA. Update when a real address exists.
-  email: "hello@waltoa.com",
+  // Contact email used by the "Get in touch" CTA.
+  email: "contact@waltoa.com",
 };
