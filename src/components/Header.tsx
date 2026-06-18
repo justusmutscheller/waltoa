@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
 
 const NAV = [
-  { label: "Über", href: "#ueber" },
-  { label: "Leistungen", href: "#leistungen" },
-  { label: "Themen", href: "#themen" },
-  { label: "Philosophie", href: "#philosophie" },
-  { label: "Ethik", href: "#ethik" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Topics", href: "#topics" },
+  { label: "Philosophy", href: "#philosophy" },
+  { label: "Ethics", href: "#ethics" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Header() {

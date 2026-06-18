@@ -2,39 +2,37 @@ import Image from "next/image";
 import { Section, Eyebrow } from "@/components/Section";
 import { SOURCES } from "@/lib/images";
 
-const GRUNDLAGE = [
-  "Wissenschaftliches Denken",
-  "Technische Präzision",
-  "Langfristige Qualität",
-  "Verantwortungsvolle Innovation",
+const FOUNDATION = [
+  "Scientific thinking",
+  "Technical precision",
+  "Lasting quality",
+  "Responsible innovation",
 ];
 
 export function About() {
   return (
-    <Section id="ueber" tone="bone">
+    <Section id="about" tone="bone">
       <div className="grid gap-12 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-4">
-          <Eyebrow>Über WALTOA</Eyebrow>
+          <Eyebrow>About WALTOA</Eyebrow>
           <h2 className="font-display text-3xl font-medium leading-tight tracking-tight text-ink md:text-4xl">
-            Klang ist Information.
+            Sound is information.
           </h2>
         </div>
         <div className="md:col-span-7 md:col-start-6">
           <p className="text-xl leading-relaxed text-ink">
-            Jede technische Innovation beginnt mit einem Signal. Bei WALTOA
-            betrachten wir Akustik, Technologie und Kommunikation als
-            zusammenhängendes System.
+            Every technical innovation begins with a signal. At WALTOA we treat
+            acoustics, technology and communication as one connected system.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-stone">
-            Wir unterstützen Unternehmen, Forschungseinrichtungen und
-            technologieorientierte Projekte dabei, komplexe Ideen hörbar,
-            verständlich und wirksam zu machen — vom ersten Messwert bis zur
-            fertigen Botschaft.
+            We help companies, research institutions and technology-driven
+            projects make complex ideas audible, understandable and effective —
+            from the first measurement to the finished message.
           </p>
 
-          <p className="eyebrow mt-10 mb-4">Unsere Grundlage</p>
+          <p className="eyebrow mt-10 mb-4">Our foundation</p>
           <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-            {GRUNDLAGE.map((g) => (
+            {FOUNDATION.map((g) => (
               <li key={g} className="flex items-center gap-3 text-ink">
                 <span className="h-1.5 w-1.5 rounded-full bg-clay" />
                 {g}
@@ -44,7 +42,7 @@ export function About() {
         </div>
       </div>
 
-      {/* Bildwelt: die Quelle von Klang, Atmosphäre und Wahrnehmung */}
+      {/* Imagery: the source of sound, atmosphere and perception */}
       <div className="mt-20 grid gap-4 sm:grid-cols-3">
         {SOURCES.map((img) => (
           <div
@@ -62,9 +60,9 @@ export function About() {
         ))}
       </div>
       <p className="mt-6 max-w-2xl text-sm leading-relaxed text-stone">
-        Unsere Bildwelt zeigt nicht das Mikrofon, sondern die Quelle: den
-        Ursprung von Klang, Atmosphäre und Wahrnehmung — vom Wassertropfen über
-        das Instrument bis zur Stimme der Natur.
+        Our imagery doesn&rsquo;t show the microphone, but the source: the origin
+        of sound, atmosphere and perception — from the water drop and the
+        instrument to the voice of nature.
       </p>
     </Section>
   );

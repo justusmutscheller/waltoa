@@ -17,19 +17,20 @@ export function Dialog() {
         </div>
 
         <div>
-          <Eyebrow>Klang verbindet</Eyebrow>
+          <Eyebrow>Sound connects</Eyebrow>
           <h2 className="font-display text-3xl font-medium leading-tight tracking-tight text-ink md:text-4xl">
-            Verstanden zu werden ist die eigentliche Akustik.
+            Being understood is the real acoustics.
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-stone">
-            Am Ende jeder Messkurve und jedes Signals steht ein Mensch, der
-            zuhört. Deshalb denken wir Akustik und Kommunikation zusammen: Wir
-            übersetzen Komplexität in Klarheit — im Produkt wie im Gespräch.
+            At the end of every measurement curve and every signal there is a
+            person listening. That is why we think about acoustics and
+            communication together: we translate complexity into clarity — in the
+            product as much as in conversation.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-stone">
-            Gute Kommunikation funktioniert wie guter Klang: präzise, frei von
-            Rauschen und auf das Wesentliche abgestimmt. So entsteht aus
-            technischer Tiefe eine Botschaft, die ankommt.
+            Good communication works like good sound: precise, free of noise and
+            tuned to what matters. That is how technical depth becomes a message
+            that lands.
           </p>
         </div>
       </div>

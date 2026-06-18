@@ -1,30 +1,30 @@
 export const ETHICS_INTRO =
-  "Innovation bringt Verantwortung mit sich. Jedes Projekt bewerten wir unter diesen Grundsätzen.";
+  "Innovation carries responsibility. We assess every project against these principles.";
 
 export const ETHICS_PRINCIPLES = [
   {
     no: "01",
-    title: "Wissenschaftliche Integrität",
-    body: "Quellen werden belegt, Methoden offengelegt und Unsicherheit klar benannt. Wir sind lieber genau als beeindruckend.",
+    title: "Scientific integrity",
+    body: "Sources are cited, methods are disclosed and uncertainty is stated plainly. We would rather be accurate than impressive.",
   },
   {
     no: "02",
-    title: "Transparente Kommunikation",
-    body: "Wir vermarkten keine Aussage über ihre Evidenz hinaus. Was die Forschung nicht trägt, sagen wir nicht — für kein Honorar.",
+    title: "Transparent communication",
+    body: "We never market a claim beyond its evidence. What the research does not support, we do not say — for any fee.",
   },
   {
     no: "03",
-    title: "Nachhaltiger Ressourceneinsatz",
-    body: "Wir bevorzugen Arbeit, die Bestand hat: langlebig, ressourcenschonend und auf langfristige Wertschöpfung angelegt.",
+    title: "Sustainable use of resources",
+    body: "We favour work that lasts: durable, resource-conscious and built for long-term value.",
   },
   {
     no: "04",
-    title: "Datenschutz und Sicherheit",
-    body: "Daten behandeln wir mit Sorgfalt und Zurückhaltung. Schutz und Sicherheit sind Voraussetzung, nicht Zusatz.",
+    title: "Privacy and security",
+    body: "We treat data with care and restraint. Protection and security are a prerequisite, not an add-on.",
   },
   {
     no: "05",
-    title: "Langfristige Wertschöpfung",
-    body: "Wir gestalten für Wirkung über die Zeit — Lösungen, die auch morgen noch sinnvoll und tragfähig sind.",
+    title: "Long-term value creation",
+    body: "We design for impact over time — solutions that still make sense and hold up tomorrow.",
   },
 ];

@@ -3,12 +3,12 @@ import { Container } from "@/components/ui/container";
 import { IMPRINT } from "@/lib/imprint";
 
 const NAV = [
-  { label: "Leistungen", href: "/#leistungen" },
-  { label: "Forschung", href: "/#themen" },
-  { label: "Audio Design", href: "/#leistungen" },
-  { label: "Technologie", href: "/#themen" },
-  { label: "Ethik", href: "/#ethik" },
-  { label: "Kontakt", href: "/#kontakt" },
+  { label: "Services", href: "/#services" },
+  { label: "Research", href: "/#topics" },
+  { label: "Audio design", href: "/#services" },
+  { label: "Technology", href: "/#topics" },
+  { label: "Ethics", href: "/#ethics" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Footer() {
@@ -18,7 +18,7 @@ export function Footer() {
     <footer className="border-t border-hairline bg-linen-deep">
       <Container className="py-20">
         <div className="grid gap-12 md:grid-cols-12">
-          {/* Wortmarke */}
+          {/* Wordmark */}
           <div className="md:col-span-5">
             <p className="font-display text-2xl font-medium uppercase tracking-[0.42em] text-ink">
               Waltoa
@@ -27,14 +27,14 @@ export function Footer() {
               Science · Sound · Strategy
             </p>
             <p className="mt-4 max-w-xs leading-relaxed text-stone">
-              Akustik, Forschung, Technologie und Kommunikation — Lösungen, die
-              Menschen hören, verstehen und denen sie vertrauen.
+              Acoustics, research, technology and communication — solutions
+              people hear, understand and trust.
             </p>
           </div>
 
           {/* Navigation */}
           <div className="md:col-span-3">
-            <p className="eyebrow mb-5">Navigation</p>
+            <p className="eyebrow mb-5">Navigate</p>
             <ul className="space-y-2.5">
               {NAV.map((item) => (
                 <li key={item.label}>
@@ -49,9 +49,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Impressum */}
+          {/* Imprint */}
           <div className="md:col-span-4">
-            <p className="eyebrow mb-5">Impressum</p>
+            <p className="eyebrow mb-5">Imprint</p>
             <address className="space-y-1 not-italic leading-relaxed text-stone">
               <p className="text-ink">{IMPRINT.companyName}</p>
               <p>{IMPRINT.responsible}</p>
@@ -68,28 +68,28 @@ export function Footer() {
               </p>
             </address>
             <Link
-              href="/impressum"
+              href="/imprint"
               className="font-display mt-4 inline-block text-sm tracking-wide text-ink underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-stone"
             >
-              Vollständiges Impressum
+              Full legal notice
             </Link>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-hairline pt-8 text-sm text-stone sm:flex-row sm:items-center">
           <p>
-            © {year} {IMPRINT.companyName}. Alle Rechte vorbehalten.
-            <span className="ml-2 text-stone/70">Fotografie: Unsplash</span>
+            © {year} {IMPRINT.companyName}. All rights reserved.
+            <span className="ml-2 text-stone/70">Photography: Unsplash</span>
           </p>
           <div className="flex gap-6">
-            <Link href="/impressum" className="transition-colors hover:text-ink">
-              Impressum
+            <Link href="/imprint" className="transition-colors hover:text-ink">
+              Imprint
             </Link>
-            <Link href="/datenschutz" className="transition-colors hover:text-ink">
-              Datenschutz
+            <Link href="/privacy" className="transition-colors hover:text-ink">
+              Privacy
             </Link>
-            <Link href="/ethik" className="transition-colors hover:text-ink">
-              Ethik
+            <Link href="/ethics" className="transition-colors hover:text-ink">
+              Ethics
             </Link>
           </div>
         </div>

@@ -4,27 +4,27 @@ import { IMPRINT } from "@/lib/imprint";
 
 export function Contact() {
   return (
-    <Section id="kontakt" tone="bone" className="text-center">
+    <Section id="contact" tone="bone" className="text-center">
       <div className="mx-auto max-w-2xl">
-        <Eyebrow>Kontakt</Eyebrow>
+        <Eyebrow>Contact</Eyebrow>
         <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-ink md:text-5xl">
-          Gemeinsam neue
+          Let&rsquo;s set new
           <br />
-          Signale setzen.
+          signals together.
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-stone">
-          Ob Forschungsprojekt, technische Innovation oder strategische
-          Entwicklung — wir freuen uns auf den Austausch.
+          Whether it&rsquo;s a research project, a technical innovation or a
+          strategic initiative — we look forward to the conversation.
         </p>
         <p className="font-display mt-8 text-sm uppercase tracking-[0.28em] text-clay">
           Science · Sound · Strategy
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Button href={`mailto:${IMPRINT.email}`} size="lg">
-            Kontakt aufnehmen
+            Get in touch
           </Button>
           <Button href="#top" variant="outline" size="lg">
-            Nach oben
+            Back to top
           </Button>
         </div>
       </div>

@@ -3,21 +3,21 @@ import { LegalShell } from "@/components/LegalShell";
 import { IMPRINT } from "@/lib/imprint";
 
 export const metadata: Metadata = {
-  title: "Datenschutz — WALTOA",
-  description: "Datenschutzhinweise von WALTOA.",
+  title: "Privacy — WALTOA",
+  description: "Privacy notice for WALTOA.",
 };
 
-export default function DatenschutzPage() {
+export default function PrivacyPage() {
   return (
     <LegalShell
-      eyebrow="Datenschutz"
-      title="Datenschutz"
-      intro="Der Schutz Ihrer Daten ist uns wichtig. Diese Hinweise geben einen Überblick darüber, wie wir mit personenbezogenen Daten umgehen. Bitte vor Veröffentlichung an die tatsächlichen Verarbeitungen und Rechtsgrundlagen anpassen."
+      eyebrow="Privacy"
+      title="Privacy notice"
+      intro="Protecting your data matters to us. This notice gives an overview of how we handle personal data. Please adapt it to your actual processing activities and legal bases before publishing."
     >
       <div className="space-y-8 text-sm leading-relaxed text-stone">
         <div>
           <h2 className="font-display mb-2 text-base font-medium text-ink">
-            Verantwortliche Stelle
+            Controller
           </h2>
           <p>
             {IMPRINT.companyName}, {IMPRINT.responsible}
@@ -34,23 +34,22 @@ export default function DatenschutzPage() {
         </div>
         <div>
           <h2 className="font-display mb-2 text-base font-medium text-ink">
-            Erhebung und Verarbeitung
+            Collection and processing
           </h2>
           <p>
-            Diese Website wird statisch ausgeliefert und erhebt selbst keine
-            personenbezogenen Daten über Formulare oder Tracking. Bei einer
-            Kontaktaufnahme per E-Mail verarbeiten wir die übermittelten Angaben
-            ausschließlich zur Bearbeitung Ihrer Anfrage.
+            This website is served statically and does not itself collect
+            personal data through forms or tracking. If you contact us by email,
+            we process the information you provide solely to handle your enquiry.
           </p>
         </div>
         <div>
           <h2 className="font-display mb-2 text-base font-medium text-ink">
-            Ihre Rechte
+            Your rights
           </h2>
           <p>
-            Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
-            Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit.
-            Wenden Sie sich dazu an die oben genannte verantwortliche Stelle.
+            You have the right to access, rectification, erasure, restriction of
+            processing and data portability. To exercise these rights, please
+            contact the controller named above.
           </p>
         </div>
       </div>

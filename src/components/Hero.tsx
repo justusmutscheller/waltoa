@@ -22,7 +22,7 @@ export function Hero() {
       </div>
 
       <Container className="flex min-h-[94vh] flex-col justify-center pb-24 pt-40">
-        <p className="eyebrow mb-7">Akustik · Forschung · Technologie · Kommunikation</p>
+        <p className="eyebrow mb-7">Acoustics · Research · Technology · Communication</p>
 
         <h1 className="font-display text-6xl font-medium uppercase leading-none tracking-[0.12em] text-ink md:text-8xl">
           Waltoa
@@ -32,18 +32,18 @@ export function Hero() {
         </p>
 
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone">
-          Wir verbinden Forschung, Technologie und Kommunikation zu Lösungen, die
-          Menschen hören, verstehen und denen sie vertrauen. Von akustischer
-          Beratung über technische Innovationskonzepte bis zur strategischen
-          Vermarktung komplexer Technologien.
+          We connect research, technology and communication into solutions that
+          people hear, understand and trust — from acoustic consulting and
+          technical innovation concepts to the strategic marketing of complex
+          technologies.
         </p>
 
         <div className="mt-11 flex flex-wrap items-center gap-4">
-          <Button href="#kontakt" size="lg">
-            Projekt besprechen
+          <Button href="#contact" size="lg">
+            Discuss a project
           </Button>
-          <Button href="#leistungen" variant="outline" size="lg">
-            Leistungen ansehen
+          <Button href="#services" variant="outline" size="lg">
+            View services
           </Button>
         </div>
       </Container>

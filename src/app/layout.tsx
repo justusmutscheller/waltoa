@@ -17,23 +17,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "WALTOA — Science. Sound. Strategy.",
   description:
-    "WALTOA verbindet Akustik, Forschung, Technologie und Kommunikation zu Lösungen, die Menschen hören, verstehen und vertrauen. Akustische Beratung, Audio Design, Forschung & Innovationsstrategie.",
+    "WALTOA connects acoustics, research, technology and communication into solutions people hear, understand and trust. Acoustic consulting, audio design, research & innovation strategy.",
   keywords: [
-    "Akustik",
-    "Akustische Beratung",
-    "Audio Design",
-    "Klang",
-    "Signalverarbeitung",
-    "Forschung",
-    "Technologiemarketing",
-    "Innovationsstrategie",
+    "acoustics",
+    "acoustic consulting",
+    "audio design",
+    "sound",
+    "signal processing",
+    "research",
+    "technology marketing",
+    "innovation strategy",
   ],
   openGraph: {
     title: "WALTOA — Science. Sound. Strategy.",
     description:
-      "Akustik, Forschung, Technologie und Kommunikation — Lösungen, die Menschen hören, verstehen und vertrauen.",
+      "Acoustics, research, technology and communication — solutions people hear, understand and trust.",
     type: "website",
-    locale: "de_DE",
+    locale: "en_US",
   },
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de">
+    <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
         {children}
       </body>

@@ -1,9 +1,9 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { Leistungen } from "@/components/Leistungen";
+import { Services } from "@/components/Services";
 import { Dialog } from "@/components/Dialog";
-import { Themen } from "@/components/Themen";
+import { Topics } from "@/components/Topics";
 import { Philosophy } from "@/components/Philosophy";
 import { Ethics } from "@/components/Ethics";
 import { Contact } from "@/components/Contact";
@@ -16,9 +16,9 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Leistungen />
+        <Services />
         <Dialog />
-        <Themen />
+        <Topics />
         <Philosophy />
         <Ethics />
         <Contact />

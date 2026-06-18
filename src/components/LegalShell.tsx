@@ -27,7 +27,7 @@ export function LegalShell({
             href="/"
             className="font-display text-sm tracking-wide text-stone transition-colors hover:text-ink"
           >
-            ← Zur Startseite
+            ← Back home
           </Link>
         </Container>
       </header>

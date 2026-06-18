@@ -21,28 +21,27 @@ npm run start   # serve the production build
 npm run lint    # eslint
 ```
 
-Inhalt und Oberfläche sind auf Deutsch („Science. Sound. Strategy.").
+Content and UI are in English ("Science. Sound. Strategy.").
 
 ## Structure
 
-- `src/app/page.tsx` — die One-Page-Komposition (Hero → Über → Leistungen →
-  Dialog → Themen → Philosophie → Ethik → Kontakt).
-- `src/app/layout.tsx` — Schriften (Space Grotesk + Inter) und Metadaten.
-- `src/app/globals.css` — die WALTOA-Farbwelt (warmes Weiß, Sandstein,
-  Nebelgrau, Graphit; kein Dunkel, kein Neon).
-- `src/components/` — Section-Komponenten + `ui/`-Primitives.
-- `src/app/impressum/`, `src/app/datenschutz/`, `src/app/ethik/` — Rechtstexte
-  (auch aus dem Footer verlinkt).
-- `src/lib/images.ts` — zentrale Bild-Registry (Unsplash); siehe
+- `src/app/page.tsx` — the one-page composition (Hero → About → Services →
+  Dialog → Topics → Philosophy → Ethics → Contact).
+- `src/app/layout.tsx` — fonts (Space Grotesk + Inter) and metadata.
+- `src/app/globals.css` — the WALTOA palette (warm white, sandstone, mist grey,
+  graphite; no dark, no neon).
+- `src/components/` — section components + `ui/` primitives.
+- `src/app/imprint/`, `src/app/privacy/`, `src/app/ethics/` — legal pages
+  (also linked from the footer).
+- `src/lib/images.ts` — central image registry (Unsplash); see
   `public/images/README.md`.
 
-## Vor der Veröffentlichung
+## Before publishing
 
-1. **Impressum** — echte Angaben in [`src/lib/imprint.ts`](src/lib/imprint.ts)
-   eintragen (Platzhalter sind markiert).
-2. **Datenschutz** — Inhalte in `src/app/datenschutz/page.tsx` an die
-   tatsächlichen Verarbeitungen anpassen.
-3. **Bilder** — bei Bedarf Motive in [`src/lib/images.ts`](src/lib/images.ts)
-   austauschen (Anleitung in [`public/images/README.md`](public/images/README.md)).
-4. **Kontakt** — E-Mail in `src/lib/imprint.ts` setzen (wird in Kontakt & Footer
-   verwendet).
+1. **Imprint** — fill in real details in [`src/lib/imprint.ts`](src/lib/imprint.ts)
+   (placeholders are marked).
+2. **Privacy** — adapt the content in `src/app/privacy/page.tsx` to your actual
+   processing activities.
+3. **Images** — swap motifs in [`src/lib/images.ts`](src/lib/images.ts) if needed
+   (guide in [`public/images/README.md`](public/images/README.md)).
+4. **Contact** — set the email in `src/lib/imprint.ts` (used in Contact & footer).

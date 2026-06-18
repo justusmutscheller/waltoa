@@ -1,28 +1,29 @@
-# Bilder
+# Images
 
-Die Website nutzt kuratierte Fotos von **Unsplash**, die zur Laufzeit per
-`next/image` geladen und optimiert werden (Domain ist in `next.config.ts`
-freigegeben). Es liegen daher keine Bilddateien in diesem Ordner.
+The site uses curated photos from **Unsplash**, loaded and optimised at runtime
+via `next/image` (the domain is allow-listed in `next.config.ts`). No image files
+are stored in this folder.
 
-Alle Bildquellen sind zentral in [`src/lib/images.ts`](../../src/lib/images.ts)
-gepflegt. Zum Austausch dort einfach die Unsplash-Foto-ID ersetzen.
+All image sources are maintained centrally in
+[`src/lib/images.ts`](../../src/lib/images.ts). To swap an image, replace the
+Unsplash photo ID there.
 
-## Verwendete Motive (Quelle von Klang, Atmosphäre, Wahrnehmung)
+## Motifs in use (the source of sound, atmosphere, perception)
 
-| Stelle              | Motiv                         | Unsplash-ID                         |
-| ------------------- | ----------------------------- | ----------------------------------- |
-| Hero                | Wassertropfen / Signal        | `photo-1535868118629-f37bcd69ff59`  |
-| Über – Bildwelt 1   | Wassertropfen                 | `photo-1535868118629-f37bcd69ff59`  |
-| Über – Bildwelt 2   | Klaviertasten                 | `photo-1520523839897-bd0b52f945a0`  |
-| Über – Bildwelt 3   | Singvogel am Zweig            | `photo-1591089570621-ea86c99a09a6`  |
-| Dialog              | Zwei Menschen im Gespräch     | `photo-1573497491208-6b1acb260507`  |
+| Location           | Motif                      | Unsplash ID                         |
+| ------------------ | -------------------------- | ----------------------------------- |
+| Hero               | Water drop / signal        | `photo-1535868118629-f37bcd69ff59`  |
+| About – imagery 1  | Water drop                 | `photo-1535868118629-f37bcd69ff59`  |
+| About – imagery 2  | Piano keys                 | `photo-1520523839897-bd0b52f945a0`  |
+| About – imagery 3  | Songbird on a branch       | `photo-1591089570621-ea86c99a09a6`  |
+| Dialog             | Two people in conversation | `photo-1573497491208-6b1acb260507`  |
 
-Idee der Bildwelt: nicht das Mikrofon zeigen, sondern die **Quelle** von Klang —
-Wasser, Instrument, Natur — sowie den menschlichen Dialog. Helle, ruhige
-Aufnahmen mit viel Licht; kein Dunkel, kein Neon.
+Idea of the imagery: don't show the microphone, but the **source** of sound —
+water, instrument, nature — plus the human dialogue. Bright, calm shots with
+plenty of light; no dark, no neon.
 
-## Eigene Fotos verwenden
+## Using your own photos
 
-Eigene Dateien in `public/images/` ablegen und die `src`-Werte in
-`src/lib/images.ts` auf den lokalen Pfad (z. B. `/images/hero.jpg`) umstellen.
-Format: helle 3:2- bzw. 4:5-Aufnahmen, mindestens ~1600 px breite Seite.
+Drop your own files into `public/images/` and point the `src` values in
+`src/lib/images.ts` to the local path (e.g. `/images/hero.jpg`). Format: bright
+3:2 or 4:5 shots, at least ~1600 px on the long edge.
