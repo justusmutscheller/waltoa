@@ -26,6 +26,11 @@ const SERVICES = [
     title: "Innovation strategy",
     body: "New ideas only unfold their value through a clear direction. We develop positioning, market strategies and communication systems for technology-driven ventures.",
   },
+  {
+    no: "06",
+    title: "Audio-technical product development",
+    body: "We develop audio-technical products from the ground up — capturing sound and engineering the technology around it, turning acoustic ideas into working devices.",
+  },
 ];
 
 export function Services() {
@@ -37,7 +42,7 @@ export function Services() {
           From measurement to message.
         </h2>
         <p className="mt-5 text-lg leading-relaxed text-stone">
-          Five disciplines that work together — connected by a shared
+          Six disciplines that work together — connected by a shared
           understanding of sound, signal and effect.
         </p>
       </div>

@@ -14,7 +14,7 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover scale-105"
         />
         {/* Heller Schleier: Bild bleibt licht, Text bleibt lesbar */}
         <div className="absolute inset-0 bg-gradient-to-b from-bone/70 via-bone/45 to-bone/85" />
