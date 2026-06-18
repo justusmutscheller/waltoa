@@ -6,6 +6,19 @@ A calm, bright, Scandinavian-interior-inspired marketing site built with
 **Next.js (App Router)**, **Tailwind CSS v4**, and a small set of
 shadcn-style components.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/justusmutscheller/waltoa)
+
+## Deploy & share
+
+The fastest way to get a shareable live link:
+
+1. Go to **[vercel.com/new](https://vercel.com/new)** and sign in with GitHub.
+2. **Import** the `justusmutscheller/waltoa` repository.
+3. Click **Deploy** — no configuration is needed (standard Next.js).
+
+Vercel returns a public URL like `https://waltoa.vercel.app` that you can send
+to anyone. Every `git push` to `main` redeploys automatically.
+
 ## Run locally
 
 ```bash
