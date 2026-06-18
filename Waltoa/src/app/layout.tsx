@@ -15,10 +15,16 @@ const inter = Inter({
 });
 
 // GitHub Pages serves under /waltoa in production; prefix asset URLs to match.
-const basePath = process.env.NODE_ENV === "production" ? "/waltoa" : "";
+// Host-aware: Vercel serves at the domain root; GitHub Pages serves under /waltoa.
+const isVercel = !!process.env.VERCEL;
+const basePath =
+  !isVercel && process.env.NODE_ENV === "production" ? "/waltoa" : "";
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "https://justusmutscheller.github.io";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://justusmutscheller.github.io"),
+  metadataBase: new URL(siteUrl),
   title: "WALTOA · Science. Sound. Strategy.",
   description:
     "WALTOA connects acoustics, research, technology and communication into solutions people hear, understand and trust. Acoustic consulting, audio design, research & innovation strategy.",

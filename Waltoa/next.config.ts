@@ -1,13 +1,16 @@
 import type { NextConfig } from "next";
 
-// On GitHub Pages the site is served from /<repo>, so we need a basePath in
-// production builds. Local dev stays at the root.
+// This project can be hosted two ways:
+//  - GitHub Pages: served from /<repo>, so it needs a basePath.
+//  - Vercel: served from the domain root, so NO basePath.
+// Vercel sets process.env.VERCEL === "1" during its builds.
 const isProd = process.env.NODE_ENV === "production";
-const repo = "waltoa";
+const isVercel = !!process.env.VERCEL;
+const onGitHubPages = isProd && !isVercel;
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? `/${repo}` : undefined,
+  basePath: onGitHubPages ? "/waltoa" : undefined,
   images: {
     unoptimized: true,
     remotePatterns: [
