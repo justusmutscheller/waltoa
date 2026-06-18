@@ -8,7 +8,7 @@ export const IMPRINT = {
   addressLines: [
     "2261 Market Street STE 35679",
     "San Francisco, CA 94114",
-    "United States",
+    "United States of America",
   ],
   // Contact email used by the "Get in touch" CTA.
   email: "contact@waltoa.com",

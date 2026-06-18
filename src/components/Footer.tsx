@@ -53,10 +53,17 @@ export function Footer() {
             <p className="eyebrow mb-5">Imprint</p>
             <address className="space-y-1 not-italic leading-relaxed text-stone">
               <p className="text-ink">{IMPRINT.companyName}</p>
-              <p>{IMPRINT.responsible}</p>
               {IMPRINT.addressLines.map((line) => (
                 <p key={line}>{line}</p>
               ))}
+              <p>
+                <a
+                  href={`mailto:${IMPRINT.email}`}
+                  className="transition-colors hover:text-ink"
+                >
+                  {IMPRINT.email}
+                </a>
+              </p>
             </address>
             <Link
               href="/imprint"
