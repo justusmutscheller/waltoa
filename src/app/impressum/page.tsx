@@ -3,8 +3,8 @@ import { LegalShell } from "@/components/LegalShell";
 import { IMPRINT } from "@/lib/imprint";
 
 export const metadata: Metadata = {
-  title: "Imprint — WALTOA",
-  description: "Legal notice and provider identification for WALTOA.",
+  title: "Impressum — WALTOA",
+  description: "Impressum und Anbieterkennzeichnung von WALTOA.",
 };
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
@@ -16,28 +16,28 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
   );
 }
 
-export default function ImprintPage() {
+export default function ImpressumPage() {
   return (
     <LegalShell
-      eyebrow="Imprint · Impressum"
-      title="Legal notice"
-      intro="Information provided in accordance with applicable disclosure requirements. Replace the placeholder details below with the firm's registered information before publishing."
+      eyebrow="Impressum"
+      title="Impressum"
+      intro="Angaben gemäß den geltenden Kennzeichnungspflichten. Bitte die Platzhalter unten vor Veröffentlichung durch die registrierten Angaben des Unternehmens ersetzen."
     >
       <dl>
-        <Row label="Company">
+        <Row label="Unternehmen">
           {IMPRINT.companyName}
           <br />
           {IMPRINT.legalForm}
         </Row>
-        <Row label="Responsible for content">{IMPRINT.responsible}</Row>
-        <Row label="Address">
+        <Row label="Verantwortlich für den Inhalt">{IMPRINT.responsible}</Row>
+        <Row label="Anschrift">
           {IMPRINT.addressLines.map((line) => (
             <span key={line} className="block">
               {line}
             </span>
           ))}
         </Row>
-        <Row label="Contact">
+        <Row label="Kontakt">
           <a
             href={`mailto:${IMPRINT.email}`}
             className="underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-stone"
@@ -47,28 +47,29 @@ export default function ImprintPage() {
           <br />
           {IMPRINT.phone}
         </Row>
-        <Row label="VAT identification">{IMPRINT.vatId}</Row>
+        <Row label="USt-IdNr.">{IMPRINT.vatId}</Row>
       </dl>
 
       <div className="mt-12 space-y-6 border-t border-hairline pt-10 text-sm leading-relaxed text-stone">
         <div>
           <h2 className="font-display mb-2 text-base font-medium text-ink">
-            Liability for content
+            Haftung für Inhalte
           </h2>
           <p>
-            The contents of these pages were created with care. We assume no
-            liability for the accuracy, completeness or timeliness of the
-            content.
+            Die Inhalte dieser Seiten wurden mit Sorgfalt erstellt. Für die
+            Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
+            jedoch keine Gewähr übernehmen.
           </p>
         </div>
         <div>
           <h2 className="font-display mb-2 text-base font-medium text-ink">
-            Copyright
+            Urheberrecht
           </h2>
           <p>
-            The content and works on these pages are protected by copyright. Any
-            use beyond the limits of copyright law requires the prior written
-            consent of {IMPRINT.companyName}.
+            Die auf diesen Seiten veröffentlichten Inhalte und Werke unterliegen
+            dem Urheberrecht. Jede Verwertung außerhalb der Grenzen des
+            Urheberrechts bedarf der vorherigen schriftlichen Zustimmung von{" "}
+            {IMPRINT.companyName}.
           </p>
         </div>
       </div>

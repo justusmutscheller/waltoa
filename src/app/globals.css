@@ -5,16 +5,17 @@
   Light, warm, gallery-calm. No dark surfaces, no neon.
 */
 @theme {
-  --color-bone: #faf8f4;
-  --color-linen: #f2eee7;
-  --color-linen-deep: #ebe5db;
-  --color-clay: #c9a98c;
+  /* WALTOA Farbwelt: warmes Weiß, Sandstein, Nebelgrau, Graphit */
+  --color-bone: #faf9f7;
+  --color-linen: #eae6e0;
+  --color-linen-deep: #d8d9d7;
+  --color-clay: #b09a7e;
   --color-clay-soft: #ddc6b1;
   --color-sage: #8e9b8c;
   --color-sage-soft: #b7c0b2;
-  --color-ink: #2b2a28;
-  --color-stone: #6e6a63;
-  --color-hairline: #e3ddd2;
+  --color-ink: #3a3a3a;
+  --color-stone: #6f6c66;
+  --color-hairline: #e0ddd6;
 
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;

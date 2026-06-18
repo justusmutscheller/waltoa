@@ -1,35 +1,28 @@
-# Imagery — swap-in guide
+# Bilder
 
-The site ships with tasteful, on-brand **placeholder art** (the `.svg` files in
-this folder) so it reads as intentional from the first load. To go live, replace
-each file with a real photograph of the **same base name** and update the
-extension in [`src/lib/images.ts`](../../src/lib/images.ts) if you use `.jpg`.
+Die Website nutzt kuratierte Fotos von **Unsplash**, die zur Laufzeit per
+`next/image` geladen und optimiert werden (Domain ist in `next.config.ts`
+freigegeben). Es liegen daher keine Bilddateien in diesem Ordner.
 
-Keep the WALTOA mood: **bright, calm, classy — no dark or neon images.** Think
-Scandinavian interior photography of *things that create sound*.
+Alle Bildquellen sind zentral in [`src/lib/images.ts`](../../src/lib/images.ts)
+gepflegt. Zum Austausch dort einfach die Unsplash-Foto-ID ersetzen.
 
-| File              | Used for            | Subject                                   | Suggested size      |
-| ----------------- | ------------------- | ----------------------------------------- | ------------------- |
-| `hero.svg`        | Full-bleed hero     | A single waterdrop meeting still water    | 2400 × 1500 (3:2)   |
-| `studio.svg`      | Studio section      | Daylight across a grand piano, bright room| 1600 × 1200 (4:3)   |
-| `waterdrop.svg`   | Focus · Science     | Waterdrop / ripple                        | 1200 × 900 (4:3)    |
-| `piano.svg`       | Focus · Quality     | Piano keys, warm light                    | 1200 × 900 (4:3)    |
-| `bird.svg`        | Focus · Research    | Songbird mid-call                         | 1200 × 900 (4:3)    |
-| `wave.svg`        | Focus · Audio Design| Waveform / sound visualisation            | 1200 × 900 (4:3)    |
-| `atmosphere.svg`  | Focus · Atmosphere  | Light and shadow in a still interior      | 1200 × 900 (4:3)    |
+## Verwendete Motive (Quelle von Klang, Atmosphäre, Wahrnehmung)
 
-## Choosing photos — "award candidates, not winners"
+| Stelle              | Motiv                         | Unsplash-ID                         |
+| ------------------- | ----------------------------- | ----------------------------------- |
+| Hero                | Wassertropfen / Signal        | `photo-1535868118629-f37bcd69ff59`  |
+| Über – Bildwelt 1   | Wassertropfen                 | `photo-1535868118629-f37bcd69ff59`  |
+| Über – Bildwelt 2   | Klaviertasten                 | `photo-1520523839897-bd0b52f945a0`  |
+| Über – Bildwelt 3   | Singvogel am Zweig            | `photo-1591089570621-ea86c99a09a6`  |
+| Dialog              | Zwei Menschen im Gespräch     | `photo-1573497491208-6b1acb260507`  |
 
-Aim for understated, high-craft images rather than the obvious crowd-pleasers.
-Good calm, license-free sources:
+Idee der Bildwelt: nicht das Mikrofon zeigen, sondern die **Quelle** von Klang —
+Wasser, Instrument, Natur — sowie den menschlichen Dialog. Helle, ruhige
+Aufnahmen mit viel Licht; kein Dunkel, kein Neon.
 
-- **Unsplash** — search: `water drop ripple`, `grand piano daylight`,
-  `bird branch minimal`, `sound waveform`, `scandinavian interior light`.
-- **Pexels** and **Wikimedia Commons** are good fallbacks.
+## Eigene Fotos verwenden
 
-Pick frames with lots of soft, bright negative space and a single quiet subject —
-they sit best against the warm "bone" background and let the typography lead.
-
-> Tip: if you place real photos and want Next.js to optimise remote URLs instead
-> of local files, add the host to `images.remotePatterns` in `next.config.ts`
-> (`images.unsplash.com` is already allow-listed).
+Eigene Dateien in `public/images/` ablegen und die `src`-Werte in
+`src/lib/images.ts` auf den lokalen Pfad (z. B. `/images/hero.jpg`) umstellen.
+Format: helle 3:2- bzw. 4:5-Aufnahmen, mindestens ~1600 px breite Seite.

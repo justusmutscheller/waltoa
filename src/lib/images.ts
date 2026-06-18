@@ -1,43 +1,51 @@
 /*
-  Central image registry.
+  Bild-Registry — kuratierte Fotos (Unsplash) rund um die Quelle von Klang,
+  Atmosphäre und Wahrnehmung. Keine Mikrofone, sondern das, was Klang erzeugt:
+  Wasser, Klavier, Vögel — sowie der menschliche Dialog.
 
-  These point at tasteful, on-brand placeholder art in /public/images so the
-  site reads as intentional from the first load. To go live, replace each .svg
-  with a real photograph of the same name (see /public/images/README.md for the
-  curated candidate shortlist and exact dimensions).
+  Unsplash-CDN ist in next.config.ts (images.unsplash.com) freigegeben.
+  Zum Austausch einfach die ID/URL hier ersetzen.
 */
 
-export const HERO_IMAGE = {
-  src: "/images/hero.svg",
-  alt: "A single drop meeting still water — sound beginning as a ripple.",
+const unsplash = (id: string, w = 1600, h?: number) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&q=80&w=${w}` +
+  (h ? `&h=${h}` : "");
+
+export type Img = { src: string; alt: string; credit: string };
+
+export const HERO_IMAGE: Img = {
+  src: unsplash("photo-1535868118629-f37bcd69ff59", 1800),
+  alt: "Ein Wassertropfen trifft auf eine ruhige Oberfläche — der Moment, in dem ein Signal entsteht.",
+  credit: "Unsplash",
 };
 
-export const STUDIO_IMAGE = {
-  src: "/images/studio.svg",
-  alt: "Soft daylight across a grand piano in a quiet, bright room.",
+// Die Bildwelt: die Quelle von Klang, Atmosphäre und Wahrnehmung.
+export const SOURCES: Img[] = [
+  {
+    src: unsplash("photo-1535868118629-f37bcd69ff59", 900, 1125),
+    alt: "Wassertropfen mit konzentrischen Ringen — ein Signal breitet sich aus.",
+    credit: "Unsplash",
+  },
+  {
+    src: unsplash("photo-1520523839897-bd0b52f945a0", 900, 1125),
+    alt: "Klaviertasten im warmen Licht — Klang als Information.",
+    credit: "Unsplash",
+  },
+  {
+    src: unsplash("photo-1591089570621-ea86c99a09a6", 900, 1125),
+    alt: "Ein Singvogel auf einem Zweig — natürliche Akustik und Wahrnehmung.",
+    credit: "Unsplash",
+  },
+];
+
+export const AUDIO_IMAGE: Img = {
+  src: unsplash("photo-1520523839897-bd0b52f945a0", 1200),
+  alt: "Klaviertasten im weichen Tageslicht.",
+  credit: "Unsplash",
 };
 
-export type FocusImage = { src: string; alt: string };
-
-export const FOCUS_IMAGES: Record<string, FocusImage> = {
-  science: {
-    src: "/images/waterdrop.svg",
-    alt: "A waterdrop suspended above its own reflection.",
-  },
-  quality: {
-    src: "/images/piano.svg",
-    alt: "Close detail of piano keys in warm light.",
-  },
-  research: {
-    src: "/images/bird.svg",
-    alt: "A songbird mid-call on a bare branch.",
-  },
-  "audio-design": {
-    src: "/images/wave.svg",
-    alt: "A calm waveform rendered as fine lines.",
-  },
-  atmosphere: {
-    src: "/images/atmosphere.svg",
-    alt: "Light and shadow falling across a still interior.",
-  },
+export const DIALOG_IMAGE: Img = {
+  src: unsplash("photo-1573497491208-6b1acb260507", 1200),
+  alt: "Zwei Menschen im Dialog an einem hellen Fenster.",
+  credit: "Unsplash",
 };

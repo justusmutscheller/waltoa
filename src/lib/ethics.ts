@@ -1,27 +1,30 @@
+export const ETHICS_INTRO =
+  "Innovation bringt Verantwortung mit sich. Jedes Projekt bewerten wir unter diesen Grundsätzen.";
+
 export const ETHICS_PRINCIPLES = [
   {
     no: "01",
-    title: "Honesty before persuasion",
-    body: "We never market a claim beyond its evidence. If the science does not support it, we will not say it — for any fee.",
+    title: "Wissenschaftliche Integrität",
+    body: "Quellen werden belegt, Methoden offengelegt und Unsicherheit klar benannt. Wir sind lieber genau als beeindruckend.",
   },
   {
     no: "02",
-    title: "Integrity in research",
-    body: "Sources are cited, methods are transparent, and uncertainty is stated plainly. We would rather be accurate than impressive.",
+    title: "Transparente Kommunikation",
+    body: "Wir vermarkten keine Aussage über ihre Evidenz hinaus. Was die Forschung nicht trägt, sagen wir nicht — für kein Honorar.",
   },
   {
     no: "03",
-    title: "Quality as responsibility",
-    body: "We treat craft as a duty to the people who will live with the work. Nothing leaves the studio that we would not stand behind.",
+    title: "Nachhaltiger Ressourceneinsatz",
+    body: "Wir bevorzugen Arbeit, die Bestand hat: langlebig, ressourcenschonend und auf langfristige Wertschöpfung angelegt.",
   },
   {
     no: "04",
-    title: "Respect for sound and silence",
-    body: "We design for attention, not exhaustion. Good sound knows when to be quiet, and we protect the listener's ear.",
+    title: "Datenschutz und Sicherheit",
+    body: "Daten behandeln wir mit Sorgfalt und Zurückhaltung. Schutz und Sicherheit sind Voraussetzung, nicht Zusatz.",
   },
   {
     no: "05",
-    title: "Considered by default",
-    body: "We favour work that lasts over work that shouts — choosing durability, restraint and sustainability wherever the choice is ours.",
+    title: "Langfristige Wertschöpfung",
+    body: "Wir gestalten für Wirkung über die Zeit — Lösungen, die auch morgen noch sinnvoll und tragfähig sind.",
   },
 ];

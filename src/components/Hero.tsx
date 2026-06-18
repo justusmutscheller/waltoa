@@ -6,7 +6,7 @@ import { HERO_IMAGE } from "@/lib/images";
 export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden">
-      {/* Full-bleed editorial photograph */}
+      {/* Vollflächiges Bild: der Moment, in dem ein Signal entsteht */}
       <div className="absolute inset-0 -z-10">
         <Image
           src={HERO_IMAGE.src}
@@ -16,32 +16,34 @@ export function Hero() {
           sizes="100vw"
           className="object-cover"
         />
-        {/* Bright wash so the image stays light and text stays legible */}
-        <div className="absolute inset-0 bg-gradient-to-b from-bone/80 via-bone/55 to-bone/90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-bone/70 to-transparent" />
+        {/* Heller Schleier: Bild bleibt licht, Text bleibt lesbar */}
+        <div className="absolute inset-0 bg-gradient-to-b from-bone/70 via-bone/45 to-bone/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bone/85 via-bone/40 to-transparent" />
       </div>
 
-      <Container className="flex min-h-[92vh] flex-col justify-center pb-24 pt-40">
-        <p className="eyebrow mb-7">Marketing · Audio · Consultancy</p>
+      <Container className="flex min-h-[94vh] flex-col justify-center pb-24 pt-40">
+        <p className="eyebrow mb-7">Akustik · Forschung · Technologie · Kommunikation</p>
 
-        <h1 className="font-display max-w-4xl text-balance text-5xl font-medium leading-[1.04] tracking-tight text-ink md:text-7xl">
-          Technical ideas,
-          <br />
-          worth hearing.
+        <h1 className="font-display text-6xl font-medium uppercase leading-none tracking-[0.12em] text-ink md:text-8xl">
+          Waltoa
         </h1>
+        <p className="font-display mt-6 text-2xl font-medium tracking-tight text-ink md:text-4xl">
+          Science. Sound. Strategy.
+        </p>
 
-        <p className="mt-8 max-w-xl text-lg leading-relaxed text-stone">
-          WALTOA is a marketing and audio consultancy for technical ideas of
-          every kind. We work where science, craft and atmosphere meet — giving
-          considered work the clarity, quality and sound it deserves.
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone">
+          Wir verbinden Forschung, Technologie und Kommunikation zu Lösungen, die
+          Menschen hören, verstehen und denen sie vertrauen. Von akustischer
+          Beratung über technische Innovationskonzepte bis zur strategischen
+          Vermarktung komplexer Technologien.
         </p>
 
         <div className="mt-11 flex flex-wrap items-center gap-4">
-          <Button href="#focus" size="lg">
-            What we work on
+          <Button href="#kontakt" size="lg">
+            Projekt besprechen
           </Button>
-          <Button href="#contact" variant="outline" size="lg">
-            Start a conversation
+          <Button href="#leistungen" variant="outline" size="lg">
+            Leistungen ansehen
           </Button>
         </div>
       </Container>

@@ -1,25 +1,22 @@
 import Link from "next/link";
 import { Section, Eyebrow } from "@/components/Section";
-import { ETHICS_PRINCIPLES } from "@/lib/ethics";
+import { ETHICS_PRINCIPLES, ETHICS_INTRO } from "@/lib/ethics";
 
 export function Ethics() {
   return (
-    <Section id="ethics" tone="linen">
+    <Section id="ethik" tone="linen">
       <div className="grid gap-12 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-4">
-          <Eyebrow>Ethics guideline</Eyebrow>
+          <Eyebrow>Ethik & Verantwortung</Eyebrow>
           <h2 className="font-display text-3xl font-medium leading-tight tracking-tight text-ink md:text-4xl">
-            The principles we will not trade.
+            Grundsätze, die wir nicht verhandeln.
           </h2>
-          <p className="mt-5 leading-relaxed text-stone">
-            A short, standing commitment to how we work — for clients, for
-            audiences, and for the field we work in.
-          </p>
+          <p className="mt-5 leading-relaxed text-stone">{ETHICS_INTRO}</p>
           <Link
-            href="/ethics"
+            href="/ethik"
             className="font-display mt-7 inline-block text-sm tracking-wide text-ink underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-stone"
           >
-            Read the full guideline
+            Vollständige Richtlinie lesen
           </Link>
         </div>
 
