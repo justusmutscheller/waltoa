@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/*
+  WALTOA — "Quiet Resonance" design tokens.
+  Light, warm, gallery-calm. No dark surfaces, no neon.
+*/
+@theme {
+  --color-bone: #faf8f4;
+  --color-linen: #f2eee7;
+  --color-linen-deep: #ebe5db;
+  --color-clay: #c9a98c;
+  --color-clay-soft: #ddc6b1;
+  --color-sage: #8e9b8c;
+  --color-sage-soft: #b7c0b2;
+  --color-ink: #2b2a28;
+  --color-stone: #6e6a63;
+  --color-hairline: #e3ddd2;
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 18px 60px -28px rgba(43, 42, 40, 0.28);
+  --shadow-card: 0 12px 40px -24px rgba(43, 42, 40, 0.22);
+}
+
+* {
+  border-color: var(--color-hairline);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offset anchors for the sticky header */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-clay-soft);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Quiet uppercase eyebrow used across sections */
+.eyebrow {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-stone);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
