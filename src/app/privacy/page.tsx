@@ -23,13 +23,6 @@ export default function PrivacyPage() {
             {IMPRINT.companyName}, {IMPRINT.responsible}
             <br />
             {IMPRINT.addressLines.join(", ")}
-            <br />
-            <a
-              href={`mailto:${IMPRINT.email}`}
-              className="underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-ink"
-            >
-              {IMPRINT.email}
-            </a>
           </p>
         </div>
         <div>

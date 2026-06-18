@@ -57,14 +57,6 @@ export function Footer() {
               {IMPRINT.addressLines.map((line) => (
                 <p key={line}>{line}</p>
               ))}
-              <p>
-                <a
-                  href={`mailto:${IMPRINT.email}`}
-                  className="transition-colors hover:text-ink"
-                >
-                  {IMPRINT.email}
-                </a>
-              </p>
             </address>
             <Link
               href="/imprint"

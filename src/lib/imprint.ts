@@ -1,18 +1,15 @@
 /*
   Imprint / Impressum details.
-  Replace the PLACEHOLDER values with the firm's real legal information
-  before publishing.
 */
 export const IMPRINT = {
   companyName: "WALTOA",
-  legalForm: "WALTOA Studio (sole proprietorship)", // PLACEHOLDER
-  responsible: "Full Name", // PLACEHOLDER — person responsible for content
+  legalForm: "Incorporated in the United States.",
+  responsible: "Iman Modarressi, Chief Executive Officer",
   addressLines: [
-    "Street and number", // PLACEHOLDER
-    "Postal code, City", // PLACEHOLDER
-    "Country", // PLACEHOLDER
+    "2261 Market Street STE 35679",
+    "San Francisco, CA 94114",
+    "United States",
   ],
+  // Contact email used by the "Get in touch" CTA. Update when a real address exists.
   email: "hello@waltoa.com",
-  phone: "+00 000 000 000", // PLACEHOLDER
-  vatId: "VAT ID — to be added", // PLACEHOLDER
 };

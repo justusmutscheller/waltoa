@@ -21,7 +21,7 @@ export default function ImprintPage() {
     <LegalShell
       eyebrow="Imprint"
       title="Legal notice"
-      intro="Information provided in accordance with applicable disclosure requirements. Please replace the placeholders below with the company's registered details before publishing."
+      intro="Information provided in accordance with applicable disclosure requirements."
     >
       <dl>
         <Row label="Company">
@@ -29,7 +29,7 @@ export default function ImprintPage() {
           <br />
           {IMPRINT.legalForm}
         </Row>
-        <Row label="Responsible for content">{IMPRINT.responsible}</Row>
+        <Row label="Represented by">{IMPRINT.responsible}</Row>
         <Row label="Address">
           {IMPRINT.addressLines.map((line) => (
             <span key={line} className="block">
@@ -37,17 +37,6 @@ export default function ImprintPage() {
             </span>
           ))}
         </Row>
-        <Row label="Contact">
-          <a
-            href={`mailto:${IMPRINT.email}`}
-            className="underline decoration-clay decoration-2 underline-offset-4 transition-colors hover:text-stone"
-          >
-            {IMPRINT.email}
-          </a>
-          <br />
-          {IMPRINT.phone}
-        </Row>
-        <Row label="VAT ID">{IMPRINT.vatId}</Row>
       </dl>
 
       <div className="mt-12 space-y-6 border-t border-hairline pt-10 text-sm leading-relaxed text-stone">
