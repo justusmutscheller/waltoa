@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://justusmutscheller.github.io"),
   title: "WALTOA · Science. Sound. Strategy.",
   description:
     "WALTOA connects acoustics, research, technology and communication into solutions people hear, understand and trust. Acoustic consulting, audio design, research & innovation strategy.",
